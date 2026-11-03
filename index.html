@@ -12,7 +12,7 @@
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Karim & Lina — Invitation de mariage" />
+<meta property="og:title" content="K & L — Invitation de mariage" />
 <meta property="og:description" content="Deux âmes, un destin, une vie à partager. 21 novembre 2026 — Kouba, Alger." />
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:image" content="https://picsum.photos/seed/klwedding/1200/630" />
@@ -111,11 +111,12 @@
   .envelope{ position:relative; width:min(88vw,420px); aspect-ratio:1.45/1; transform-style:preserve-3d; }
   .env-back{ position:absolute; inset:0; border-radius:10px;
     background:linear-gradient(160deg,#FBF8F2,#EFE7D6); box-shadow:0 40px 80px -30px rgba(0,0,0,.7); }
-  .env-card{ position:absolute; left:6%; width:88%; top:8%; height:104%; border-radius:8px; z-index:3;
-    background:linear-gradient(170deg,#FFFDF8,#F4EDE0); box-shadow:0 16px 40px -18px rgba(0,0,0,.55);
-    border:1px solid rgba(192,161,92,.45); display:flex; flex-direction:column; align-items:center;
-    justify-content:center; text-align:center; padding:1.2rem; transform:translateY(0); }
+  .env-card{ position:absolute; left:6%; width:88%; top:10%; height:80%; border-radius:8px; z-index:3;
+  background:linear-gradient(170deg,#FFFDF8,#F4EDE0); box-shadow:0 16px 40px -18px rgba(0,0,0,.55);
+  border:1px solid rgba(192,161,92,.45); display:flex; flex-direction:column; align-items:center;
+  justify-content:center; text-align:center; padding:1.2rem; transform:translateY(0); }
   .env-front{ position:absolute; inset:0; z-index:4; border-radius:10px; overflow:hidden; }
+  .seal{ z-index:8; }
   .env-front .tri{ position:absolute; inset:0;
     background:linear-gradient(200deg,#F6F0E3,#E7DDC9);
     clip-path:polygon(0 100%,100% 100%,100% 22%,50% 74%,0 22%);
@@ -296,7 +297,7 @@
           <p class="font-arab text-forest text-sm sm:text-base mb-2">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
           <div class="divider my-2"><span class="l"></span><span class="d"></span><span class="r"></span></div>
           <p class="font-display text-[.6rem] tracking-[.3em] uppercase text-gold">Save the date</p>
-          <h2 class="font-display text-lg sm:text-2xl text-forest mt-2 leading-tight">KARIM<br><span class="font-script text-gold text-2xl sm:text-3xl">&amp;</span><br>LINA</h2>
+          <h2 class="font-display text-lg sm:text-2xl text-forest mt-2 leading-tight">L<br><span class="font-script text-gold text-2xl sm:text-3xl">&amp;</span><br>K</h2>
           <p class="mt-3 text-xs sm:text-sm tracking-[.25em] text-ink/70">26 · 11 · 2026</p>
         </div>
 
@@ -334,8 +335,8 @@
     <!-- Navigation -->
     <nav class="hidden lg:flex items-center gap-9">
       <a href="#accueil" class="nav-link" data-i18n="nav.home">Accueil</a>
-      <a href="#histoire" class="nav-link" data-i18n="nav.story">Histoire</a>
-      <a href="#programme" class="nav-link" data-i18n="nav.program">Programme</a>
+      <a href="#histoire" class="nav-link" data-i18n="nav.story">Déroulement</a>
+      <a href="#programme" class="nav-link" data-i18n="nav.program">Avis</a>
       <a href="#galerie" class="nav-link" data-i18n="nav.gallery">Salle dinatoire</a>
       <a href="#localisation" class="nav-link" data-i18n="nav.location">Localisation</a>
       <a href="#rsvp" class="nav-link" data-i18n="nav.rsvp">RSVP</a>
@@ -410,16 +411,15 @@
     <p class="hero-el font-arab text-gold2 text-xl sm:text-3xl mb-8 leading-relaxed">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</p>
 
     <div class="hero-el divider mb-8"><span class="l"></span><span class="d"></span><span class="r"></span></div>
-
-    <p class="hero-el font-display text-[.66rem] sm:text-xs tracking-[.4em] uppercase text-ivory/65 mb-8" data-i18n="hero.invite">Nous avons la joie de vous inviter à célébrer le Mariage de</p>
-
-    <h1 class="hero-el font-display leading-[1.08]">
-      <span class="block text-[7.5vw] sm:text-5xl md:text-6xl tracking-[.12em] gold-text">HAMIMECHE KARIM</span>
+    <span class="hero-el block text-[7.5vw] sm:text-4xl md:text-5xl tracking-[.12em] gold-text mb-6 sm:mb-8">Monsieur et Madame AYACHE</span>
+    <p class="hero-el font-display text-[.66rem] sm:text-xs tracking-[.4em] uppercase text-ivory/65 mb-8" data-i18n="hero.invite">Ont la joie et le plaisir de vous faire part du mariage de </p>
+    <h1 class="hero-el font-display flex items-center justify-center gap-4 sm:gap-8 leading-none my-6">
+      <span class="block text-[7.5vw] sm:text-6xl md:text-7xl tracking-[.12em] gold-text">L</span>
       <span class="block font-script text-5xl sm:text-6xl md:text-7xl text-gold2 my-2 sm:my-3">&amp;</span>
-      <span class="block text-[7.5vw] sm:text-5xl md:text-6xl tracking-[.12em] gold-text">AYACHE LINA</span>
+      <span class="block text-[7.5vw] sm:text-6xl md:text-7xl tracking-[.12em] gold-text">K</span>
     </h1>
-
-    <div class="hero-el mt-10 inline-flex flex-col items-center">
+        <p class="hero-el font-display text-[.66rem] sm:text-xs tracking-[.4em] uppercase text-ivory/65 mb-8" data-i18n="hero.invite">Et vous prient de bien vouloir honorer de votre présence la cérémonie qui aura lieu: </p>
+    <div class="hero-el mt-5 inline-flex flex-col items-center">
       <div class="flex items-center gap-4 sm:gap-6">
         <span class="w-10 sm:w-16 h-px bg-gold2/50"></span>
         <p class="font-display text-sm sm:text-lg tracking-[.32em] text-ivory">26 NOVEMBRE 2026</p>
@@ -430,7 +430,7 @@
       </p>
     </div>
 
-    <p class="hero-el mt-10 italic text-lg sm:text-2xl text-gold2/90" data-i18n="hero.quote">« Deux âmes, un destin, une vie à partager. »</p>
+    <p class="hero-el mt-10 italic text-lg sm:text-2xl text-gold2/90" data-i18n="hero.quote">«SVP : PHOTOS ET VIDÉOS INTERDITES DURANT LA CÉRÉMONIE. »</p>
 
     <div class="hero-el mt-11 flex flex-wrap justify-center gap-3">
       <a href="#rsvp" class="btn btn-gold"><i data-lucide="heart" class="w-4 h-4"></i><span data-i18n="hero.cta1">Confirmer ma présence</span></a>
@@ -479,12 +479,12 @@
   </div>
 </section>
 
-<!-- ══════════════ NOTRE HISTOIRE ══════════════ -->
+<!-- ══════════════ deroulemnt ══════════════ -->
 <section id="histoire" class="relative py-24 sm:py-32 bg-ivory overflow-hidden">
   <div class="max-w-5xl mx-auto px-6">
     <div class="text-center mb-16">
-      <p class="reveal font-display text-[.66rem] tracking-[.4em] uppercase text-gold mb-4" data-i18n="story.kicker">Notre chemin</p>
-      <h2 class="reveal font-display text-3xl sm:text-5xl text-forest" data-i18n="story.title">Notre histoire</h2>
+      <p class="reveal font-display text-[.66rem] tracking-[.4em] uppercase text-gold mb-4" data-i18n="story.kicker">Déroulement</p>
+      <h2 class="reveal font-display text-3xl sm:text-5xl text-forest" data-i18n="story.title">Déroulement</h2>
       <div class="reveal divider mt-6"><span class="l"></span><span class="d"></span><span class="r"></span></div>
     </div>
     <div id="story-list" class="relative"></div>
@@ -496,8 +496,8 @@
   <div class="absolute inset-0 pattern-geo opacity-[.14]"></div>
   <div class="relative max-w-4xl mx-auto px-6">
     <div class="text-center mb-16">
-      <p class="reveal font-display text-[.66rem] tracking-[.4em] uppercase text-gold2 mb-4" data-i18n="prog.kicker">21 novembre 2026</p>
-      <h2 class="reveal font-display text-3xl sm:text-5xl text-ivory" data-i18n="prog.title">Programme de la journée</h2>
+      <p class="reveal font-display text-[.66rem] tracking-[.4em] uppercase text-gold2 mb-4" data-i18n="prog.kicker">26 novembre 2026</p>
+      <h2 class="reveal font-display text-3xl sm:text-5xl text-ivory" data-i18n="prog.title">Avis aux invités</h2>
       <div class="reveal divider mt-6"><span class="l"></span><span class="d"></span><span class="r"></span></div>
     </div>
     <div id="prog-list" class="space-y-3"></div>
@@ -630,8 +630,8 @@
   <div class="relative max-w-3xl mx-auto px-6 text-center">
     <p class="font-arab text-forest text-xl mb-6">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
     <div class="divider mb-8"><span class="l"></span><span class="d"></span><span class="r"></span></div>
-    <p class="font-script text-4xl sm:text-5xl gold-text mb-3">Karim &amp; Lina</p>
-    <p class="font-display tracking-[.3em] text-xs text-ink/60">21 · 11 · 2026 — KOUBA, ALGER</p>
+    <p class="font-script text-4xl sm:text-5xl gold-text mb-3">K &amp; L</p>
+    <p class="font-display tracking-[.3em] text-xs text-ink/60">26 · 11 · 2026 — KOUBA, ALGER</p>
     <div class="flex flex-wrap justify-center gap-3 mt-9">
       <button id="replay-btn-f" class="btn btn-outline !py-2.5 !px-5 !text-[.62rem]"><i data-lucide="mail-open" class="w-4 h-4"></i><span data-i18n="nav.replay">Revoir l'ouverture</span></button>
       <button id="wa-btn-2" class="btn btn-outline !py-2.5 !px-5 !text-[.62rem]"><i data-lucide="share-2" class="w-4 h-4"></i> WhatsApp</button>
@@ -687,8 +687,8 @@ const supabaseClient = window.supabase.createClient(
    /data/wedding.ts  →  toutes les informations modifiables ici
    ═══════════════════════════════════════════════════════════ */
 const WEDDING = {
-  groom: { first:"Karim", last:"Hamimeche" },
-  bride: { first:"Lina",  last:"Ayache" },
+  groom: { first:"L", last:"" },
+  bride: { first:"K",  last:"" },
   date:  "2026-11-26T18:00:00+01:00",
   dateEnd:"2026-11-27T01:00:00+01:00",
   dateLabel: "26 novembre 2026",
@@ -702,26 +702,24 @@ const WEDDING = {
   url: "https://mariagekl.netlify.app",
   rsvpDeadline: "1er novembre 2026",
   program: [
-    { time:"18:00", title:"Accueil des invités",  desc:"Réception, thé et pâtisseries traditionnelles.", icon:"door-open" },
-    { time:"19:00", title:"Cérémonie",            desc:"Lecture du Coran et signature de l'acte de mariage.", icon:"book-open" },
-    { time:"20:00", title:"Célébration",          desc:"Entrée des mariés, chants et musique andalouse.", icon:"sparkles" },
-    { time:"21:30", title:"Dîner",                desc:"Dîner de gala servi à table.", icon:"utensils-crossed" }
+    { time:"1", title:"Pas de photo",            desc:"Afin de préserver l’intimité de chacun, les photos ne sont pas autorisées pendant la réception. Merci de profiter pleinement de l’instant présent avec nous.", icon:"camera-off" },
+    { time:"1", title:"Pas de video",            desc:"Pour le respect de nos invités, les vidéos et les enregistrements ne sont pas autorisés durant toute la soirée. Un photographe sera là pour immortaliser ces moments.", icon:"video-off" },
+    { time:"2", title:"Pas d'enfants",          desc:"Nous avons le regret de ne pouvoir accueillir les enfants lors de cette célébration. Nous vous remercions de votre compréhension et de votre bienveillance.", icon:"ban" },
+   
   ],
   story: [
-    { year:"03-07-2026", title:"La Khotba (Fiançailles) ", text:"Un regard, quelques mots, et une évidence : nos chemins venaient de se croiser pour ne plus jamais se séparer.", img:"https://picsum.photos/seed/klstory1/900/700" },
-    { year:"03-07-2026", title:"tasdira", text:"Des rires, des voyages et la complicité de deux familles qui apprennent à n'en former qu'une.", img:"https://picsum.photos/seed/klstory2/900/700" },
-    { year:"03-07-2026", title:"Le cortège", text:"Devant nos familles, la Fatiha a scellé une promesse faite avec le cœur et avec la foi.", img:"https://picsum.photos/seed/klstory3/900/700" },
-    { year:"26-11-2026", title:"Le grand jour", text:"Le 21 novembre 2026, nous unissons nos vies — entourés de ceux que nous aimons. In châ' Allah.", img:"https://picsum.photos/seed/klstory4/900/700" }
+    { year:"13H30 - 15H", title:"COLLATION ", text:"Un moment de convivialité autour de douceurs salées et sucrées, pour accueillir chaleureusement nos invités et commencer la fête dans la bonne humeur.", img:'images/collation.jpg' },
+    { year:"16H - 17H", title:"PAUSE CAFE", text:"Thé, café et pâtisseries traditionnelles pour se retrouver, discuter et partager de beaux instants en famille et entre amis.",img:'images/bak.PNG' },
+    { year:"18H", title:"DINER", text:"Un dîner de gala servi à table pour célébrer ensemble cette belle union. Merci de partager avec nous ce moment de joie. In châ’ Allah.", img:'images/DINER.jpg' },
   ],
   gallery: [
     { src:"images/d1.jpg", cap:"Royale prestige" , span:"row-span-2" },
     { src:"images/d2.jpg",  cap:"Henné" },
-    { src:"https://picsum.photos/seed/klg3/1000/800",  cap:"Alger" },
-    { src:"https://picsum.photos/seed/klg4/1000/1300", cap:"Instants", span:"row-span-2" },
-    { src:"https://picsum.photos/seed/klg5/1000/800",  cap:"Famille" },
-    { src:"https://picsum.photos/seed/klg6/1000/800",  cap:"Détails" },
-    { src:"https://picsum.photos/seed/klg7/1000/800",  cap:"Traditions" },
-    { src:"https://picsum.photos/seed/klg8/1000/800",  cap:"Complicité" }
+    { src:"images/3.jpg", cap:"Royale prestige", span:"row-span-2" },
+    { src:"images/4.jpg",  cap:"Royale prestige" },
+    { src:"images/6.jpg",  cap:"Détails" },
+    { src:"images/7.jpg",  cap:"Traditions" },
+    { src:"images/8.jpg",  cap:"Complicité" }
   ]
 };
 
@@ -889,7 +887,7 @@ $('#cal-hero').onclick=googleCal;
 
 /* ═══════════ WhatsApp ═══════════ */
 function whatsapp(){
-  const msg = `🤍 *Invitation de mariage* 🤍\n\n${WEDDING.groom.last.toUpperCase()} ${WEDDING.groom.first} & ${WEDDING.bride.last.toUpperCase()} ${WEDDING.bride.first}\n\n📅 ${WEDDING.dateLabel}\n📍 ${WEDDING.venue.address}\n\nNous serions honorés de votre présence.\n\n👉 ${WEDDING.url}`;
+  const msg = `🤍 *Invitation de mariage* 🤍\n\n${WEDDING.groom.last.toUpperCase()} ${WEDDING.groom.first} & ${WEDDING.bride.last.toUpperCase()} ${WEDDING.bride.first}\n\n📅 ${WEDDING.dateLabel}\n📍 ${WEDDING.venue.address}\n\nMonsieur et Madame AYACHE ont la joie de vous faire part de ce mariage, Nous serions honorés de votre présence.\n\n👉 ${WEDDING.url}`;
   window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank','noopener');
 }
 $('#wa-btn').onclick=whatsapp; $('#wa-btn-2').onclick=whatsapp;
@@ -1092,7 +1090,7 @@ function openEnvelope(){
     .set('#env-flap',{zIndex:6})
     .to('#env-flap',{rotateX:-172,duration:1.15,ease:'power2.inOut'},'-=.15')
     .set('#env-flap',{zIndex:1})
-    .to('#env-card',{y:'-58%',duration:1,ease:'power3.inOut'},'-=.15')
+    .to('#env-card',{y:'-70%',duration:1,ease:'power3.inOut'},'-=.15')
     .to('#env-card',{scale:1.06,duration:.5,ease:'power2.out'},'-=.15')
     .to('#envelope',{y:-30,duration:.6,ease:'power2.inOut'},'-=.5')
     .to('#env-card',{scale:1.9,opacity:0,duration:.8,ease:'power2.inOut'},'+=.25')
