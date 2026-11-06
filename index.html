@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta name="theme-color" content="#123B34" />
 <meta name="color-scheme" content="only light">
-<title>Karim &amp; Lina — Invitation de mariage</title>
+<title>Ayache Lina — Invitation de mariage</title>
 <meta name="description" content="Karim Hamimeche & Lina Ayache ont la joie de vous inviter à célébrer leur mariage le 26 novembre 2026 à Kouba, Alger. Programme, galerie, localisation et confirmation de présence." />
 <meta name="author" content="Karim & Lina" />
 <link rel="canonical" href="https://mariagekl.netlify.app/" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="K & L — Invitation de mariage" />
+<meta property="og:title" content="Ayache Lina — Invitation de mariage" />
 <meta property="og:description" content="Deux âmes, un destin, une vie à partager. 26 novembre 2026 — Kouba, Alger." />
 <meta property="og:locale" content="fr_FR" />
 <meta property="og:image" content="https://mariagekl.netlify.app/images/og-cover.jpg" />
@@ -541,8 +541,8 @@
         <p class="text-ink/70 text-lg leading-relaxed" id="venue-addr">Lotissement SAIDOUNE, Rue Belili Mohamed، Kouba-Alger</p>
         <div class="gold-line my-7"></div>
         <ul class="space-y-3 text-ink/70">
-          <li class="flex items-center gap-3"><i data-lucide="calendar-days" class="w-4 h-4 text-gold"></i> Samedi 26 novembre 2026</li>
-          <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-gold"></i> <span data-i18n="loc.time">Accueil à partir de 18h00</span></li>
+          <li class="flex items-center gap-3"><i data-lucide="calendar-days" class="w-4 h-4 text-gold"></i> jeudi 26 novembre 2026</li>
+          <li class="flex items-center gap-3"><i data-lucide="clock" class="w-4 h-4 text-gold"></i> <span data-i18n="loc.time">Accueil à partir de 13h30</span></li>
           <li class="flex items-center gap-3"><i data-lucide="car" class="w-4 h-4 text-gold"></i> <span data-i18n="loc.park">Parking disponible sur place</span></li>
         </ul>
         <div class="flex flex-wrap gap-3 mt-9">
@@ -628,7 +628,7 @@
   <div class="relative max-w-3xl mx-auto px-6 text-center">
     <p class="font-arab text-forest text-xl mb-6">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</p>
     <div class="divider mb-8"><span class="l"></span><span class="d"></span><span class="r"></span></div>
-    <p class="font-script text-4xl sm:text-5xl gold-text mb-3">K &amp; L</p>
+    <p class="font-script text-4xl sm:text-5xl gold-text mb-3">LINA</p>
     <p class="font-display tracking-[.3em] text-xs text-ink/60">26 · 11 · 2026 — KOUBA, ALGER</p>
     <div class="flex flex-wrap justify-center gap-3 mt-9">
       <button id="replay-btn-f" class="btn btn-outline !py-2.5 !px-5 !text-[.62rem]"><i data-lucide="mail-open" class="w-4 h-4"></i><span data-i18n="nav.replay">Revoir l'ouverture</span></button>
@@ -685,8 +685,8 @@ const supabaseClient = window.supabase.createClient(
    /data/wedding.ts  →  toutes les informations modifiables ici
    ═══════════════════════════════════════════════════════════ */
 const WEDDING = {
-  groom: { first:"L", last:"" },
-  bride: { first:"K",  last:"" },
+  groom: { first:"Lina", last:"" },
+  bride: { first:"Ayache",  last:"" },
   date:  "2026-11-26T18:00:00+01:00",
   dateEnd:"2026-11-27T01:00:00+01:00",
   dateLabel: "26 novembre 2026",
@@ -885,7 +885,7 @@ $('#cal-hero').onclick=googleCal;
 
 /* ═══════════ WhatsApp ═══════════ */
 function whatsapp(){
-  const msg = `🤍 *Invitation de mariage* 🤍\n\n${WEDDING.groom.last.toUpperCase()} ${WEDDING.groom.first} & ${WEDDING.bride.last.toUpperCase()} ${WEDDING.bride.first}\n\n📅 ${WEDDING.dateLabel}\n📍 ${WEDDING.venue.address}\n\nMonsieur et Madame AYACHE ont la joie de vous faire part de ce mariage, Nous serions honorés de votre présence.\n\n👉 ${WEDDING.url}`;
+  const msg = `🤍 *Invitation de mariage* 🤍\n\n${WEDDING.groom.last.toUpperCase()} ${WEDDING.groom.first}  ${WEDDING.bride.last.toUpperCase()} ${WEDDING.bride.first}\n\n📅 ${WEDDING.dateLabel}\n📍 ${WEDDING.venue.address}\n\nMonsieur et Madame AYACHE ont la joie de vous faire part de ce mariage, Nous serions honorés de votre présence.\n\n👉 ${WEDDING.url}`;
   window.open('https://wa.me/?text='+encodeURIComponent(msg),'_blank','noopener');
 }
 $('#wa-btn').onclick=whatsapp; $('#wa-btn-2').onclick=whatsapp;
